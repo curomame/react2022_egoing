@@ -3,13 +3,15 @@ import { Component } from "react";
 class Subject extends Component{
   render(){
     return (
-<header>
+      <header>
   <h1><a href="/" onClick={(e) => {
     e.preventDefault();
     this.props.onChangePage();
   }}>{this.props.title}</a></h1>{/* bind 계속해줘야함 */}
   {this.props.sub}
 </header>
+
+      
 
     );
   }
